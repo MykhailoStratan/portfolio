@@ -1,2 +1,2 @@
 # portfolio
-Junior Web Developer portfolio
+Web Developer portfolio
