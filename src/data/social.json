@@ -1,0 +1,22 @@
+[
+    {
+        "imageName": "github_icon.png",
+        "name": "GitHub",
+        "link": "/"
+    },
+    {
+        "imageName": "linkedin_icon.png",
+        "name": "Linkedin",
+        "link": "/"
+    },
+    {
+        "imageName": "instagram_icon.png",
+        "name": "Instagram",
+        "link": "/"
+    },
+    {
+        "imageName": "telegram_icon.png",
+        "name": "Telegram",
+        "link": "/"
+    }
+]

@@ -1,0 +1,17 @@
+.social-link-menu {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.social-menu-link-icon {
+  width: 1.5em;
+  filter: invert(1);
+  opacity: 0.6;
+}
+
+.social-menu-link-icon:hover {
+  opacity: 1;
+}

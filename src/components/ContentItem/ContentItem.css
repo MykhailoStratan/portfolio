@@ -1,0 +1,70 @@
+.content-item {
+  display: flex;
+  width: 95%;
+  margin: 0 auto;
+  padding: 1em 2em;
+  z-index: 10;
+}
+
+.content-item:hover {
+  border: 0px transparent solid;
+  border-radius: 0.5em;
+  background-color: #16213b;
+  box-sizing: border-box;
+  filter: drop-shadow(0 0 0.2rem rgb(54, 221, 224, 0.2));
+}
+
+.content-item h4 {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+}
+
+.content-item:hover h4 {
+  color: #5eead4;
+}
+
+.content-item h4::after {
+  position: absolute;
+  background-image: url("/arrow_up_right_icon.png");
+  background-size: 1em 1em;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  content: "";
+  filter: invert(1);
+  right: -1.2em;
+  top: 0.25em;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+}
+
+.content-item:hover h4:after {
+  right: -1.5em;
+  top: 0em;
+}
+
+.content-item-date,
+.content-item-image {
+  flex: 0 0 30%;
+  font-size: 0.7rem;
+  color: #64748b;
+}
+
+.description-skill-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  padding-left: 0;
+}
+
+.description-skill-list-item {
+  background: rgb(94, 234, 212, 0.1);
+  opacity: 1;
+  color: #5eead4;
+  padding: 0.3em 0.6em;
+  border-radius: 1em;
+  font-size: 0.8rem;
+}
