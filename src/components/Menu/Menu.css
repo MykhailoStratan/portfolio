@@ -43,3 +43,9 @@
 .item-active::before {
   width: 5em;
 }
+
+@media screen and (max-width: 1200px) {
+  .navigation-menu {
+    display: none;
+  }
+}

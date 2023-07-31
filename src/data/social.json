@@ -2,21 +2,21 @@
     {
         "imageName": "github_icon.png",
         "name": "GitHub",
-        "link": "/"
+        "link": "https://github.com/MykhailoStratan"
     },
     {
         "imageName": "linkedin_icon.png",
         "name": "Linkedin",
-        "link": "/"
+        "link": "https://www.linkedin.com/in/mstratan/"
     },
     {
         "imageName": "instagram_icon.png",
         "name": "Instagram",
-        "link": "/"
+        "link": "https://www.instagram.com/stratanmihail/"
     },
     {
         "imageName": "telegram_icon.png",
         "name": "Telegram",
-        "link": "/"
+        "link": "https://t.me/amstra"
     }
 ]

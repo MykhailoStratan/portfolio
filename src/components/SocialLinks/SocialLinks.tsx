@@ -16,7 +16,7 @@ const SocialLinks: FC<SocialLinksProps> = ({ socialLinks }) => {
         <ul className="social-link-menu">
             {socialLinks.map((socialLink: SocialLink, index: number) => {
                 return <li className="social-link-menu-item" key={ index }>
-                    <a href={ socialLink.link }><img src={`./${socialLink.imageName}`} alt={ socialLink.name } className="social-menu-link-icon" /></a>
+                    <a href={ socialLink.link }  target="_blank"><img src={`./${socialLink.imageName}`} alt={ socialLink.name } className="social-menu-link-icon" /></a>
                 </li>
             })}
         </ul>

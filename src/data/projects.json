@@ -1,9 +1,9 @@
 [
     {
-        "imageName": "github_icon.png",
-        "header": "Web Developer · Dev.Pro",
-        "description": "Deliver high-quality, robust production code for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more. Provide leadership within engineering department through close collaboration, knowledge shares, and mentorship.",
-        "skills": ["JavaScript", "TypeScript", "Vue", "Angular2+", "SCSS", "SQL", "Electron", "Cordova"]
+        "imageName": "lingoflips_screen.png",
+        "header": "Lingo Flips",
+        "description": "The idea of the project came during the preparation of immigration to Canada. I decided to do something that could potentially help me learn the language and improve my React skills at the same time. Inspired by the Quizlet web app",
+        "skills": ["React", "Firebase", "WordsAPI", "TypeScript", "SCSS", "Vite", "GitHub", "Netlify"]
     },
     {
         "imageName": "github_icon.png",

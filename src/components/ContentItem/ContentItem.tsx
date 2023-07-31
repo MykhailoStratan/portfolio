@@ -32,14 +32,6 @@ const ContentItem: FC<ContentItemProps> = ({ contentItem }) => {
                     {skills.map((skill: string, index: number) => {
                         return <li className="description-skill-list-item" key={ index }>{ skill }</li>
                     })}
-                    {/* <li className="description-skill-list-item">JavaScript</li>
-                    <li className="description-skill-list-item">TypeScript</li>
-                    <li className="description-skill-list-item">Vue</li>
-                    <li className="description-skill-list-item">Angular2+</li>
-                    <li className="description-skill-list-item">SCSS</li>
-                    <li className="description-skill-list-item">SQL</li>
-                    <li className="description-skill-list-item">Electron</li>
-                    <li className="description-skill-list-item">Cordova</li> */}
                 </ul>
             </div>
         </div>

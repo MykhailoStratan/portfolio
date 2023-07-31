@@ -52,6 +52,8 @@
 .colum-static-introduction h3 {
   margin-top: 0;
   margin-bottom: 0;
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 
 .column-static-top,
@@ -75,6 +77,15 @@
   padding-top: 6em;
 }
 
+.content-about h4 {
+  margin-bottom: 0;
+}
+
+.content-about span {
+  color: white;
+  font-weight: 500;
+}
+
 .content-experience,
 .content-projects {
   padding-top: 5em;
@@ -93,4 +104,68 @@ a:visited {
 p {
   font-size: 0.9rem;
   color: #8497b4;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    flex-direction: column
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .column-static {
+    position: relative;
+    width: 100%;
+    align-content: flex-start;
+    height: 100%;
+  }
+
+  .colum-static-introduction p {
+    max-width: 20rem;
+  }
+
+  .content-about {
+    width: 100%;
+    padding-top: 8em;
+  }
+
+  .content-about::before {
+    content: "ABOUT";
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+  }
+
+  .content-experience {
+    position: relative;
+  }
+
+  .content-experience::before {
+    position: absolute;
+    content: "EXPERIENCE";
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    top: 3em;
+  }
+
+  .content-projects {
+    position: relative;
+    padding-top: 7em;
+  }
+
+  .content-projects::before {
+    position: absolute;
+    content: "PROJECTS";
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    top: 4.5em;
+  }
+
+  .full-resume {
+    width: 100%;
+  }
 }

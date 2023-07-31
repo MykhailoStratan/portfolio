@@ -3,21 +3,21 @@
         "dateStart": "SEP 2021",
         "dateEnd": "JUN 2023",
         "header": "Web Developer · Dev.Pro",
-        "description": "Deliver high-quality, robust production code for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more. Provide leadership within engineering department through close collaboration, knowledge shares, and mentorship.",
-        "skills": ["JavaScript", "TypeScript", "Vue", "Angular2+", "SCSS", "SQL", "Electron", "Cordova"]
+        "description": "Implemented innovative features for interconnected restaurant service apps, including Point of Sale and Kitchen Screen. Utilized Angular, Vue, and Typescript for streamlined transactions. Optimized frontend and backend legacy code using JavaScript, jQuery, and thorough debugging. Ensured robustness with comprehensive unit and end-to-end tests. Active in team meetings, conducting code reviews and providing valuable insights. Strong reporting skills to update managers on progress and milestones. Translated design with Figma for intuitive interfaces.",
+        "skills": ["JavaScript", "TypeScript", "Vue", "Angular2+", "SCSS", "SQL", "Electron", "Cordova", "Figma", "BitBucket"]
     },
     {
-        "dateStart": "SEP 2021",
-        "dateEnd": "JUN 2023",
-        "header": "Web Developer · Dev.Pro",
-        "description": "Deliver high-quality, robust production code for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more. Provide leadership within engineering department through close collaboration, knowledge shares, and mentorship.",
-        "skills": ["JavaScript", "TypeScript", "Vue", "Angular2+", "SCSS", "SQL", "Electron", "Cordova"]
+        "dateStart": "APR 2020",
+        "dateEnd": "SEP 2021",
+        "header": "Chief Operating Officer Assistant · Planit Inc.",
+        "description": "Streamlined VDC projects coordination, managed operations team, and fostered stakeholder relationships. Supported Project Managers, optimizing workflows and resource allocation. Implemented automated tools with Google Sheets, Data Studio, and Apps Script, reducing data collection time and enabling efficient analysis for 150+ employees.",
+        "skills": ["Google Sheets", "App Script (JS + Google Sheets API)", "Data Studio", "SQL"]
     },
     {
-        "dateStart": "SEP 2021",
-        "dateEnd": "JUN 2023",
-        "header": "Web Developer · Dev.Pro",
+        "dateStart": "FEB 2019",
+        "dateEnd": "SEP 2021",
+        "header": "BIM Specialist · Planit Inc.",
         "description": "Deliver high-quality, robust production code for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more. Provide leadership within engineering department through close collaboration, knowledge shares, and mentorship.",
-        "skills": ["JavaScript", "TypeScript", "Vue", "Angular2+", "SCSS", "SQL", "Electron", "Cordova"]
+        "skills": ["Revit", "Autocad", "BIM 360", "Dynamo (Python)", "Navisworks"]
     }
 ]
