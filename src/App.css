@@ -101,6 +101,10 @@ a:visited {
   color: white;
 }
 
+a {
+  text-decoration: none;
+}
+
 p {
   font-size: 0.9rem;
   color: #8497b4;
@@ -108,7 +112,7 @@ p {
 
 @media screen and (max-width: 1200px) {
   .container {
-    flex-direction: column
+    flex-direction: column;
   }
 
   .column {
@@ -127,11 +131,16 @@ p {
   }
 
   .content-about {
+    position: relative;
     width: 100%;
     padding-top: 8em;
   }
 
   .content-about::before {
+    position: absolute;
+    left: 50%;
+    top: 6em;
+    transform: translate(-50%, 0);
     content: "ABOUT";
     font-size: 1rem;
     font-weight: 600;
@@ -144,6 +153,8 @@ p {
 
   .content-experience::before {
     position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
     content: "EXPERIENCE";
     font-size: 1rem;
     font-weight: 600;
@@ -158,6 +169,8 @@ p {
 
   .content-projects::before {
     position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
     content: "PROJECTS";
     font-size: 1rem;
     font-weight: 600;
@@ -167,5 +180,13 @@ p {
 
   .full-resume {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .column-static-top,
+  .column-static-bottom {
+    display: flex;
+    justify-content: center;
   }
 }

@@ -98,7 +98,7 @@
     flex-direction: column;
   }
 
-  .content-item-date {
+  .content-item-date, .content-item-image {
     margin-bottom: 1em;
   }
 
