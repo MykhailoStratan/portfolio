@@ -53,6 +53,9 @@ function App() {
                             })}
                         </div>
                     </div>
+                    <div className="column-dynamic-content-footer">
+                        <p>Created with <a href="https://react.dev/" target="_blank">ReactJS</a> and <a href="https://vitejs.dev/" target="_blank">Vite</a>, deployed at <a href="https://www.netlify.com/" target="_blank">Netlify</a>. All text is set in the <a href="https://fonts.google.com/specimen/Inter" target="_blank">Inter</a> typeface.</p>
+                    </div>
                 </div>
             </div>
         </>

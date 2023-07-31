@@ -91,6 +91,11 @@
   padding-top: 5em;
 }
 
+.column-dynamic-content-footer {
+  width: 85%;
+  margin: 0 auto;
+}
+
 .full-resume {
   width: calc(100% - 6em);
   margin: auto;
@@ -178,6 +183,12 @@ p {
     top: 4.5em;
   }
 
+  .column-dynamic-content-footer {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
   .full-resume {
     width: 100%;
   }
@@ -188,5 +199,9 @@ p {
   .column-static-bottom {
     display: flex;
     justify-content: center;
+  }
+
+  .colum-static-introduction {
+    width: 100%;
   }
 }
