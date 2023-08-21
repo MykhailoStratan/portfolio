@@ -2,19 +2,24 @@
     {
         "imageName": "lingoflips_screen.png",
         "header": "Lingo Flips",
-        "description": "The idea of the project came during the preparation of immigration to Canada. I decided to do something that could potentially help me learn the language and improve my React skills at the same time. Inspired by the Quizlet web app",
+        "link": "https://lingoflips.netlify.app/",
+        "description": "The idea of the project came during the preparation for immigration to Canada. I decided to do something that could potentially help me learn the language and improve my React skills at the same time. Inspired by the Quizlet web app. Status: V1.0 deployed.",
         "skills": ["React", "Firebase", "WordsAPI", "TypeScript", "SCSS", "Vite", "GitHub", "Netlify"]
     },
     {
-        "imageName": "github_icon.png",
-        "header": "Web Developer · Dev.Pro",
-        "description": "Deliver high-quality, robust production code for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more. Provide leadership within engineering department through close collaboration, knowledge shares, and mentorship.",
-        "skills": ["JavaScript", "TypeScript", "Vue", "Angular2+", "SCSS", "SQL", "Electron", "Cordova"]
+        "imageName": "botanicharbor_screen.png",
+        "header": "Botanic Harbour",
+        "link": "https://botanic-harbor.netlify.app/",
+        "designerLink": "https://www.instagram.com/kosarmonemi/",
+        "designerName": "Kosar Monemi",
+        "description": "Implementation of UI design as a cross platform Mobile Web Application. Status: Work in progress.",
+        "skills": ["React", "TypeScript", "Redux", "CSS", "SCSS", "Cordova"]
     },
     {
-        "imageName": "github_icon.png",
+        "imageName": "devpro_icon.png",
         "header": "Web Developer · Dev.Pro",
-        "description": "Deliver high-quality, robust production code for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more. Provide leadership within engineering department through close collaboration, knowledge shares, and mentorship.",
+        "link": "https://dev.pro/portfolio/",
+        "description": "Creating cross-platform applications for the restaurant and retail sectors, including projects like Kitchen Video Screens and Point of Sale systems for a client who is a member of the Fortune 500 Enterprise. I can't provide detailed information due to a signed NDA but do not hesitate to review my personal site portfolio for more available details.",
         "skills": ["JavaScript", "TypeScript", "Vue", "Angular2+", "SCSS", "SQL", "Electron", "Cordova"]
     }
 ]

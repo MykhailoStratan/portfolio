@@ -1,3 +1,7 @@
+a {
+  all: unset;
+}
+
 .content-item {
   display: flex;
   width: 95%;
@@ -5,6 +9,10 @@
   padding: 1em 2em;
   z-index: 10;
   cursor: pointer;
+}
+
+.content-item-description p a:hover {
+  text-decoration: underline;
 }
 
 .content-item:hover {

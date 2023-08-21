@@ -8,6 +8,9 @@ export interface ContentItemType {
     header: string;
     description: string;
     skills: string[];
+    link?: string;
+    designerLink?: string;
+    designerName?: string;
 }
 
 export interface ContentItemProps {
@@ -15,26 +18,29 @@ export interface ContentItemProps {
 }
 
 const ContentItem: FC<ContentItemProps> = ({ contentItem }) => {
-    const {dateStart, dateEnd, header, description, skills, imageName} = contentItem;
+    const {dateStart, dateEnd, header, description, skills, imageName, link, designerLink, designerName} = contentItem;
     
     return (
-        <div className="content-experience-item content-item">
-            { dateEnd && dateStart 
-                ? <div className="content-item-date">{ `${dateStart} — ${dateEnd}` }</div> 
-                : null }
-            { imageName 
-                ? <div className="content-item-image"><img src={`/${imageName}`} alt="project-image" /></div>
-                : null }
-            <div className="content-item-description">
-                <h4>{ header }</h4>
-                <p>{ description }</p>
-                <ul className="description-skill-list">
-                    {skills.map((skill: string, index: number) => {
-                        return <li className="description-skill-list-item" key={ index }>{ skill }</li>
-                    })}
-                </ul>
+        <a href={ link || '/' } target="_blank">
+            <div className="content-experience-item content-item">
+                    { dateEnd && dateStart 
+                        ? <div className="content-item-date">{ `${dateStart} — ${dateEnd}` }</div> 
+                        : null }
+                    { imageName 
+                        ? <div className="content-item-image"><img src={`/${imageName}`} alt="project-image" /></div>
+                        : null }
+                    <div className="content-item-description">
+                        <h4>{ header }</h4>
+                        <p>{ description }</p>
+                        {designerLink && designerName ? <p>{'Design author: '}<a href={designerLink} target='_blank'>{designerName}</a></p> : null}
+                        <ul className="description-skill-list">
+                            {skills.map((skill: string, index: number) => {
+                                return <li className="description-skill-list-item" key={ index }>{ skill }</li>
+                            })}
+                        </ul>
+                    </div>
             </div>
-        </div>
+        </a>
     );
 };
 
