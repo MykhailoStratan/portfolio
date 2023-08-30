@@ -45,7 +45,7 @@ function App() {
                             })}
                         </div>
                         <div className="full-resume">
-                            <a href="https://drive.google.com/file/d/1Xyj8yK9AnnUdAeNW89eHfvnBDNTJ6n9j/view?usp=sharing" className="resume-link">View Full Resume ⟶</a>
+                            <a href="https://drive.google.com/file/d/1Xyj8yK9AnnUdAeNW89eHfvnBDNTJ6n9j/view?usp=sharing" className="resume-link" target="_blank">View Full Resume ⟶</a>
                         </div>
                         <div id="projects" className="content-projects">
                             {projects.map((contentItem: ContentItemType, index: number) => {
