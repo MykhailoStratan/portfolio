@@ -1,0 +1,41 @@
+.container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    
+    opacity: 1;
+    transition: 0.5s cubic-bezier(0.165, 0.165, 0.13, 0.1);
+}
+
+
+
+.container.inactive {
+    /* opacity: 0; */
+    top: -2000px;
+    right: -2000px;
+    transition: 0.5s cubic-bezier(0.165, 0.165, 0.13, 0.1);
+}
+
+.container.daryna {
+    background-color: #b4bed6;
+    color: #20242d;
+}
+
+.container.daryna p {
+    background-color: #b4bed6;
+    color: #20242d;
+}
+
+.container.daryna .social-menu-link-icon {
+    filter: none;
+}
+
+.container.daryna li {
+    background-color: #b4bed6;
+    color: #20242d;
+}
+
+.container.misha {
+    background-color: #0F172A;
+}
