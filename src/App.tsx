@@ -1,44 +1,35 @@
-import './App.css';
+// import './App.css';
 
 import Person from '../src/components/Peson/Person';
 import { useState } from 'react';
 
 function App() {
-    const switchBtnText = ['Potography', 'Videography'];
-    const [currentSwitchBtnText, setCurrentSwitchBtnText] = useState(switchBtnText[0]);
-
     const persons = [
         {
             name: 'Daryna Stoikova',
             profession: 'Photographer',
-            visibility: 'visible',
         },
-        {
-            name: 'Misha Stratan',
-            profession: 'Videographer',
-            visibility: 'hidden',
-        }
+        // {
+        //     name: 'Misha Stratan',
+        //     profession: 'Videographer',
+        // }
     ];
-    const [firstPersonVisibility, setFirstPersonVisibility] = useState(persons[0].visibility);
-    const [secondPersonVisibility, setSecondPersonVisibility] = useState(persons[1].visibility);
+    const [currentPerson, setCurrenPerson] = useState(persons[0]);
 
-    function switchText() {
-        if (currentSwitchBtnText === switchBtnText[0]) {
-            setCurrentSwitchBtnText(switchBtnText[1]);
-            setFirstPersonVisibility('visible');
-            setSecondPersonVisibility('hidden');
+
+
+    function switchPerson() {
+        if (currentPerson.name === persons[0].name) {
+            setCurrenPerson(persons[1]);
         } else {
-            setCurrentSwitchBtnText(switchBtnText[0])
-            setFirstPersonVisibility('hidden');
-            setSecondPersonVisibility('visible');
+            setCurrenPerson(persons[0]);
         }
     }
 
     return (
         <>  
-            <button style={{position: 'absolute', top: '0', zIndex: '100'}} onClick={switchText}>{currentSwitchBtnText}</button>
-            <Person name={persons[0].name} profession={persons[0].profession} visibility={firstPersonVisibility}></Person>
-            <Person name={persons[1].name} profession={persons[1].profession} visibility={secondPersonVisibility}></Person>
+            {/* <button style={{position: 'absolute', top: '0', zIndex: '100'}} onClick={switchPerson}>Switch</button> */}
+            <Person name={currentPerson.name}></Person>
         </>
     )
 }

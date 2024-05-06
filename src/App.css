@@ -29,7 +29,7 @@
   height: 0;
 }
 
-.column-static {
+/* .column-static {
   position: sticky;
   display: flex;
   flex-wrap: wrap;
@@ -37,7 +37,7 @@
   padding-bottom: 2em;
   height: 85vh;
   top: 6em;
-}
+} */
 
 .colum-static-introduction {
   width: 90%;
@@ -184,9 +184,11 @@ p {
   }
 
   .column-dynamic-content-footer {
+
     width: 80%;
     margin: 0 auto;
     text-align: center;
+
   }
 
   .full-resume {

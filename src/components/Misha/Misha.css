@@ -1,0 +1,25 @@
+.container {
+    /* position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    
+    opacity: 1; */
+    /* transition: 0.5s cubic-bezier(0.165, 0.165, 0.13, 0.1); */
+    /* transition: 0.5s linear; */
+}
+
+
+
+.container.inactive {
+    /* opacity: 0; */
+    /* right: -2000px;
+    transition: 0.5s linear; */
+    /* display: none; */
+}
+
+
+
+.container.misha {
+    background-color: #0F172A;
+}
