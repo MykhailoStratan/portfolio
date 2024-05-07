@@ -47,44 +47,46 @@ const Carousel: FC<{ images: Image[] }> = ({ images }) => {
                                 image={images[images.length - 1]}
                                 style={{ transform: leftCardTransform}} 
                                 onClick={slideLeft}
+                                aspect='portrait'
                             />
                              <CarouselItem 
                                     image={images[currentIndex]} 
-                                    onClick={openPreview}/>
+                                    onClick={openPreview} aspect='portrait'/>
 
                             <CarouselItem 
                                 image={images[currentIndex + 1]} 
                                 style={{ transform: rightCardTransform}} 
-                                onClick={slideRight}/>
+                                onClick={slideRight} aspect='portrait'/>
                         </>
                         : currentIndex === images.length-1
                             ? <>
                                 <CarouselItem 
                                     image={images[currentIndex - 1]} 
                                     style={{ transform: leftCardTransform}} 
-                                    onClick={slideLeft}/>
+                                    onClick={slideLeft} aspect='portrait'/>
                                 <CarouselItem 
                                         image={images[currentIndex]} 
-                                        onClick={openPreview}/>
+                                        onClick={openPreview} aspect='portrait'/>
 
                                 <CarouselItem 
                                     image={images[0]} 
                                     style={{ transform: rightCardTransform}} 
-                                    onClick={slideRight}/>
+                                    onClick={slideRight} aspect='portrait'/>
 
                             </>
                             : <>
                                 <CarouselItem 
                                     image={images[currentIndex - 1]} 
                                     style={{ transform: leftCardTransform}} 
-                                    onClick={slideLeft}/>
+                                    onClick={slideLeft} aspect='portrait'/>
                                 <CarouselItem 
                                         image={images[currentIndex]} 
-                                        onClick={openPreview}/>
+                                        onClick={openPreview} aspect='portrait'/>
                                 <CarouselItem 
                                     image={images[currentIndex + 1]} 
                                     style={{ transform: rightCardTransform}} 
-                                    onClick={slideRight}/>
+                                    onClick={slideRight}
+                                    aspect='portrait'/>
                             </>
                     }
                     {/* {plants.map((plant, index) => {

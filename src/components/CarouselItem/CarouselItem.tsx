@@ -8,9 +8,10 @@ interface CarouselItemProps {
     style?: CSSProperties;
     onClick: MouseEventHandler<HTMLLIElement>;
     className?: string;
+    aspect: 'portrait' | 'landscape';
 }
 
-const CarouselItem: FC<CarouselItemProps> = ({image, style, onClick, className}) => {
+const CarouselItem: FC<CarouselItemProps> = ({image, style, onClick, className, aspect}) => {
     // const [isCentered, setIsFavourite] = useState<boolean>(favourite);
 
     // function switchFavourite() {
@@ -21,10 +22,11 @@ const CarouselItem: FC<CarouselItemProps> = ({image, style, onClick, className})
     // function reviewDetails() {
         
     // }
+
  
     return (
-            <li className={`carousel-item-card`+ (className ? `${className}` : '')} onClick={onClick}>
-                    <img src={image.src} alt={image.caption} />
+            <li className={`carousel-item-card`+ (className ? `${className}` : '')} onClick={onClick} style={{...style}}>
+                    <img src={`../../../public/photos/slider/${image.src}.jpg`} alt={image.caption} className={aspect === 'landscape' ? 'item-landscape' : 'item-portrait'}/>
                 <p className="carousel-item-caption">{`${image.caption}`}</p>
             </li>
     );

@@ -14,16 +14,15 @@ export interface Image {
 const activeCardTransform = 'rotate(0deg) translate(0rem, 0rem) scale(1.2)';
 const rightCardTransform = 'rotate(0deg) translate(0rem, 0rem) scale(1)';
 
-const Carousel: FC<{ images: Image[] }> = ({ images }) => {
-    const [currentIndex, setCurrentIndex] = useState<number>(0);
+const Carousel: FC<{ images: Image[], aspect: "portrait" | "landscape" }> = ({ images, aspect }) => {
 
+    const [currentIndex, setCurrentIndex] = useState<number>(0);
     let photoIndex = 1;
     let photoSwitcher: number;
     function setPhotoSwitcher(currentIndex?: number) {
         if (photoSwitcher) {
             clearInterval(photoSwitcher);
         }
-
         photoSwitcher = setInterval(() => {
             photoIndex === images.length ? photoIndex = 0 : null;
             setActiveItem(photoIndex++);
@@ -34,6 +33,7 @@ const Carousel: FC<{ images: Image[] }> = ({ images }) => {
 
     useEffect(() => {
         setPhotoSwitcher();
+
 
         return () => {
             if (photoSwitcher) {
@@ -68,13 +68,26 @@ const Carousel: FC<{ images: Image[] }> = ({ images }) => {
         const items = document.querySelectorAll('.carousel-item-card2');
         items.forEach((item, index) => {
             item.classList.remove('active-item');
+            // const itemImage =  item.querySelector('img');
+            // const imageHeight = itemImage?.naturalHeight;
+            // const imageWidth = itemImage?.naturalWidth;
+            // const aspectRatio = imageHeight! > imageWidth! ? 'portrait' : 'landscape';
+            
         })
         // console.log(items)
         items[activeItemIndex].classList.add('active-item')
 
         const listContainer = document.querySelector<HTMLElement>('.content-carousel2 ul');
         // console.log(listContainer)
-        listContainer!.style.left = `${(-360 * activeItemIndex)}px`
+        if (aspect === "landscape") {
+            listContainer!.style.left = `${(-600 * activeItemIndex)}px` 
+            
+        } else {
+            listContainer!.style.left = `${(-350 * activeItemIndex)}px`
+        }
+        
+
+        
         
     }
 
@@ -82,9 +95,9 @@ const Carousel: FC<{ images: Image[] }> = ({ images }) => {
         setActiveItem(activeItemIndex);
         setSliderSpanActive(activeItemIndex+1);
         photoIndex = activeItemIndex+1;
-        if (photoSwitcher) {
-            clearInterval(photoSwitcher);
-        }
+        // if (photoSwitcher) {
+        //     clearInterval(photoSwitcher);
+        // }
         setPhotoSwitcher();
     }
 
@@ -109,7 +122,7 @@ const Carousel: FC<{ images: Image[] }> = ({ images }) => {
     return (
         <>
             <div className="content-carousel2">
-                <ul>
+                <ul style={aspect === "landscape" ? {gap: '100px', transform: 'translate(36.5%, 0%)'} : {}}>
                     {/* {currentIndex === 0
                         ? <>
                             <CarouselItem 
@@ -158,9 +171,9 @@ const Carousel: FC<{ images: Image[] }> = ({ images }) => {
                     } */}
                     {images.map((image, index) => {
                         if (index === 0) {
-                            return <CarouselItem image={image} onClick={() => setActiveItemResetInterval(index)} className={'2 active-item'}/>
+                            return <CarouselItem image={image} onClick={() => setActiveItemResetInterval(index)} className={'2 active-item'} aspect={aspect}/>
                         }
-                        return <CarouselItem image={image} onClick={() => setActiveItemResetInterval(index)} style={{}} className={'2'}/>
+                        return <CarouselItem image={image} onClick={() => setActiveItemResetInterval(index)} style={{}} className={'2'} aspect={aspect}/>
                     })}
                 </ul>
                 <div className='slider-span-container'>

@@ -80,7 +80,7 @@ const Daryna: FC<DarynaProps> = ({ visibility }) => {
                         <button className="next" onClick={nextSlide}>&#10095;</button>
                     </div> */}
                     {/* <Carousel images={images}/> */}
-                    <Carousel2 images={images}/>
+                    <Carousel2 images={images} aspect="portrait"/>
                 </div>
             </div>
             

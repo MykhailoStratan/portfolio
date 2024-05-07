@@ -29,7 +29,7 @@
 
 .carousel-item-card2 img {
     height: auto;
-    width: 300px;
+    /* width: 300px; */
     object-fit: cover;
     border: 0px transparent solid;
     border-radius: 0.2em;
@@ -47,4 +47,12 @@
 
 .active-item img{
     filter: brightness(100%);
+}
+
+.item-portrait {
+    width: 300px;
+}
+
+.item-landscape {
+    width: 500px;
 }

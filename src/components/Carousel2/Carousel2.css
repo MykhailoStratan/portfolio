@@ -47,15 +47,15 @@
 }
 
 .slider-span {
-    height: 5px;
+    height: 3px;
     width: 100px;
-    background-color: rgb(208, 204, 204);
+    background-color: rgb(80, 80, 80);
     border-radius: 5px;
 }
 
 .slider-span-active {
     transition: 0.5s linear;
-    background-color: rgb(192, 0, 0);
+    background-color: rgb(234, 234, 234);
 
 }
 
