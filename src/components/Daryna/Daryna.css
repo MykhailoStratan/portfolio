@@ -69,9 +69,13 @@
 
 .wrapper.daryna .navigation-menu {
     /* display: inline-block; */
+    position: fixed;
+    right: 0px;
+    top: 20px;
     width: 15%;
     padding-top: 0.5em;
     padding-right: 3em;
+    z-index: 1000;
 }
 
 .wrapper.daryna p {

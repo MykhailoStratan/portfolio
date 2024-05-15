@@ -1,22 +1,17 @@
 [
     {
-        "imageName": "github_icon.png",
-        "name": "GitHub",
-        "link": "https://github.com/MykhailoStratan"
-    },
-    {
-        "imageName": "linkedin_icon.png",
-        "name": "Linkedin",
-        "link": "https://www.linkedin.com/in/mstratan/"
+        "imageName": "facebook_icon.png",
+        "name": "Facebook",
+        "link": "https://www.facebook.com/profile.php?id=100011219850763"
     },
     {
         "imageName": "instagram_icon.png",
         "name": "Instagram",
-        "link": "https://www.instagram.com/stratanmykhailo/"
+        "link": "https://www.instagram.com/daryna_stoikova"
     },
     {
         "imageName": "telegram_icon.png",
         "name": "Telegram",
-        "link": "https://t.me/amstra"
+        "link": "https://t.me/Daryna_Stoikova"
     }
 ]

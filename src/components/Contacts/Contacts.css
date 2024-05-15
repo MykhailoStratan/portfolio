@@ -1,0 +1,47 @@
+.contacts-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* padding: 100px; */
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(210, 234, 255);
+}
+
+.contacts-container form {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 30%;
+    gap: 5px;
+}
+
+.contacts-container form label, .contacts-container form input, .contacts-container form textarea {
+    width: 40%;
+    height: 50px;
+    line-height: 3;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    background-color: aliceblue;
+    color: #121212;
+    flex-grow: 1;
+    min-height: 50px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.contacts-container form label {
+    background-color: #535353;
+    color: whitesmoke
+}
+
+.submit {
+    width: 100px;
+}
+
+.contacts-container .social-menu-link-icon {
+    filter: none;
+}

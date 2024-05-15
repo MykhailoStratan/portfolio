@@ -103,8 +103,8 @@ const Carousel: FC<{ images: Image[], aspect: "portrait" | "landscape" }> = ({ i
 
     function setSliderSpanActive(activeItemIndex: number) {
         const items = document.querySelectorAll('.slider-span');
-        console.log(activeItemIndex)
-        console.log(images.length)
+        // console.log(activeItemIndex)
+        // console.log(images.length)
         
         items.forEach((item, index) => {
             // console.log('current index', photoIndex)

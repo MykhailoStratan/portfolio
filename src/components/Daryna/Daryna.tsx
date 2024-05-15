@@ -10,6 +10,7 @@ import images from '../../data/images.json'
 import social from '../../data/social.json';
 import Carousel from "../Carousel/Carousel";
 import Carousel2 from "../Carousel2/Carousel2";
+import Contacts from "../Contacts/Contacts";
 
 interface DarynaProps {
     // name: string;
@@ -21,7 +22,7 @@ const Daryna: FC<DarynaProps> = ({ visibility }) => {
     
     return (
             <div className="daryna-block">
-                <div className={`wrapper daryna` + (visibility ? `` : ` inactive`)}>
+                <div className={`wrapper daryna` + (visibility ? `` : ` inactive`)} id="about">
                     <div className="column column-static">
                         <div className="column-static-top">
                             <div className="colum-static-introduction">
@@ -82,6 +83,7 @@ const Daryna: FC<DarynaProps> = ({ visibility }) => {
                     {/* <Carousel images={images}/> */}
                     <Carousel2 images={images} aspect="portrait"/>
                 </div>
+                <Contacts></Contacts>
             </div>
             
     )
