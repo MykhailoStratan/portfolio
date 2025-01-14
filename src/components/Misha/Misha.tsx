@@ -22,7 +22,7 @@ const Misha: FC<MishaProps> = ({ visibility }) => {
                     <div className="column-static-top">
                         <div className="colum-static-introduction">
                             <h1>Misha Stratan</h1>
-                            <h3>Videographer</h3>
+                            <h3>Web Developer</h3>
                             <p>I'm a skilled web developer with 2 years of experience, dedicated to crafting user-friendly websites and delivering impactful digital solutions. Explore my projects and let's create something great together!</p>
                         </div>
                         <Menu menuItems={['about', 'experience', 'projects']} />
